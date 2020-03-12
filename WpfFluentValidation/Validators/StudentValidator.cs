@@ -27,6 +27,11 @@ namespace WpfFluentValidation.Validators
                 .WithMessage("邮政编码由六位数字组成。");
         }
 
+        /// <summary>
+        /// 匹配6位数字
+        /// </summary>
+        /// <param name="zip"></param>
+        /// <returns></returns>
         private static bool BeAValidZip(string zip)
         {
             if (!string.IsNullOrEmpty(zip))
